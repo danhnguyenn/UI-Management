@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký nghĩ phép</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo header-three">
+        <img src="./assets/img/logo.png" alt="Logo Công ty" />
+      </div>
+      <form action="" class="header__form-group">
+        <input
+          type="password"
+          name="username"
+          id="username"
+          class="header__form-search"
+          placeholder="Tìm kiếm"
+        />
+        <div class="header__icon-search">
+          <span>
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+        </div>
+      </form>
+    </header>
+    <hr />
+    <article class="container">
+      <div class="sidebar">
+        <div class="sidebar__avatar">
+          <img src="./assets/img/logo.png" alt="" class="" />
+          <h6>Nhân viên A</h6>
+        </div>
+        <nav class="sidebar__menu">
+          <a href="#" class="sidebar__menu-item btn">Thông tin cá nhân</a>
+          <a href="check-in-out.html" class="btn sidebar__menu-item"
+            >Check in/ Check out</a
+          >
+          <a href="timekeeping-history.html" class="btn sidebar__menu-item"
+            >Lịch sử chấm công</a
+          >
+          <a href="timekeeping-report.html" class="btn sidebar__menu-item"
+            >Báo cáo lỗi chấm công</a
+          >
+          <a href="register-off.html" class="btn sidebar__menu-item btn--active"
+            >Đăng ký nghĩ phép</a
+          >
+          <a href="" class="btn sidebar__menu-item">Đăng xuất</a>
+        </nav>
+      </div>
+      <main class="content">
+        <div class="content--row">
+          <div class="content--name">
+            <h5 class="content--title">Đơn xin nghĩ phép</h5>
+          </div>
+        </div>
+        <div class="container">
+          <form action="#" class="form-checkin">
+            <div class="profile__row">
+              <div class="login__form-group">
+                <label for="reason">Lý do</label>
+                <input
+                  type="text"
+                  name="reason"
+                  id="reason"
+                  class="login__form-input"
+                />
+              </div>
+              <div class="login__form-group">
+                <label for="id">Ca</label>
+                <input
+                  type="text"
+                  name="id"
+                  id="id"
+                  class="login__form-input"
+                />
+              </div>
+              <div class="login__form-group">
+                <label for="status">Từ ngày</label>
+                <input
+                  type="date"
+                  name="status"
+                  id="status"
+                  class="login__form-input"
+                />
+              </div>
+              <div class="login__form-group">
+                <label for="status">Đến ngày</label>
+                <input
+                  type="date"
+                  name="status"
+                  id="status"
+                  class="login__form-input"
+                />
+              </div>
+              <div class="login__form-group">
+                <label for="status">Đơn vị công tác</label>
+                <input
+                  type="text"
+                  name="status"
+                  id="status"
+                  class="login__form-input"
+                />
+              </div>
+            </div>
+            <div class="login__form-group">
+              <label for="status">Mô tả</label>
+              <textarea id="myTextarea" placeholder=""></textarea>
+            </div>
+          </form>
+          <div class="register-act">
+            <button class="btn btn--primary btn--md">Gửi</button>
+            <button class="btn btn--md">Hủy bỏ</button>
+          </div>
+        </div>
+      </main>
+    </article>
+  </body>
+</html>
